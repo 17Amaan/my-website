@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form - JobPulse</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="jobPulseicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="mainheader">
+            <div class="jpImage"></div>
+            <h1 id="form-heading">Your Next Career Move Starts Here!</h1>
+        </div>
+    </header>
+    <main>
+        <p id="subheader">Fill out the form below and take the next step in your career.</p>
+        <div id="jobForm">
+            <h2 id="header2">Job Application Form</h2>
+            <form action="" class="application-from">
+                <div>
+                    <label for="Name">Name:-</label>
+                    <input id="Name" type="text" placeholder="Enter your Name" name="Name" required>
+                </div>
+                <div>
+                    <div>
+                        <label for="DOB">Date of Birth:-</label>
+                        <input id="DOB" type="date" placeholder="Enter your Date Of Birth" required>
+                    </div>
+                    <div>
+                        <label for="field">Select your Field:</label>
+                        <select id="field" required>
+                            <option value="" disabled selected>Select Your Field</option>
+                            <option value="Financial Analyst">Financial Analyst</option>
+                            <option value="Investment Banker">Investment Banker</option>
+                            <option value="Chartered Accountants">Chartered Accountants</option>
+                            <option value="Risk Manager">Risk Manager</option>
+                            <option value="Tax Consultant">Tax Consultant</option>
+                            <option value="Corporate Finance Manager">Corporate Finance Manager</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <label for="Gender">Gender:-</label>
+                        <select id="Gender" required>
+                            <option value="" Disabled selected>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Email Address">Email Address:-</label>
+                        <input id="Email Address" type="email" placeholder="Enter your Email Address" required>
+                    </div>
+                    <div class="phno">
+                        <label for="phone">Phone Number:-</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="resume">
+                        <label for="resume">Upload Resume:-</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.docx">
+                    </div>
+                    <button type="submit" class="submitform">Submit Application</button>
+
+            </form>
+        </div>
+    </main>
+    <script src="/public/form.js"></script>
+</body>
+
+</html>
